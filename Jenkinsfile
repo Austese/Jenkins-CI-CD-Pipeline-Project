@@ -47,7 +47,7 @@ pipeline {
           sh 'mvn verify -DskipUnitTests'
         }
     }
-    stage ('Checkstyle Code Analysis'){
+    stage ('Checkstyle Codes Analysis'){
         steps {
             sh 'mvn checkstyle:checkstyle'
         }
